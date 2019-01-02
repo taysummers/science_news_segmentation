@@ -17,7 +17,8 @@ The key to a creating a good consumer segmentation is having a well-designed que
 - Enough variables in the questionnaire to play around with multiple segmentations, using a combination of a few different segmentation variables
 - A questionnaire that could yield interesting, and well-defined consumer segments
 
-After careful assessment I chose to move forward with the 2017 PEW Research Center Science and News Survey. It is a robust questionnaire which gets at the attitudes and behaviors towards science in the news as well as general news attitudes and behaviors. It also has a very extensive battery of demographic variables which could be used for rich profiling and the prediction model, which will be explained further later.
+#### The Data
+After careful assessment I chose to move forward with the [2017 PEW Research Center Science and News Survey](http://www.pewinternet.org/dataset/2017-pew-research-center-science-and-news-survey/). It is a robust questionnaire which contains general attitudes about news, preferences and behaviors surrounding news consumption and science news consumption. It also has a very extensive battery of demographic variables which could be used for rich profiling and the prediction model, which will be explained further later. There are 4,024 respondents and 250 features.
 
 ### Segment
 ***Relevant files:** [pipeline.py](https://github.com/taysummers/science_news_segmentation/blob/master/pipeline.py), [ClusterModels.ipynb](https://github.com/taysummers/science_news_segmentation/blob/master/JupyterNotebookWork/ClusterModels.ipynb), [SelectingBestClusterModel.ipynb](https://github.com/taysummers/science_news_segmentation/blob/master/JupyterNotebookWork/SelectingBestClusterModel.ipynb)*<br>
