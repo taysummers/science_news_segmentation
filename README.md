@@ -50,7 +50,7 @@ Once the segments were fully profiled and I felt that I truly understood each se
 ### Predict
 ***Relevant files:** [model.py](https://github.com/taysummers/science_news_segmentation/blob/master/model.py), [PredictingSegments.ipynb](https://github.com/taysummers/science_news_segmentation/blob/master/JupyterNotebookWork/PredictingSegments.ipynb)*<br>
 <br>
-As my final step of this project I built a classification model which predicts the segment of a new consumer using primarily demographic and behavioral data to simulate the way that advertising agencies target different consumer segments. Using 10 non-segmentation variables, I was able to predict a new consumer segment with 68% accuracy. I trained and tested a Logistic Regression, Random Forest Classifier and Gradient Boosting Classifier Model. The Gradient Boosting Model performed the best, with the highest accuracy and was optimized using a Grid Search to find the best parameters. 
+As my final step of this project I built a classification model which predicts the segment of a new consumer using primarily demographic and behavioral data to simulate the way that advertising agencies target different consumer segments. Using 10 non-segmentation variables, I was able to predict a new consumer segment with a train accuracy of 67% and a test accuracy of 68%. I trained and tested a Logistic Regression, Random Forest Classifier and Gradient Boosting Classifier Model. The Gradient Boosting Model performed the best, with the highest accuracy and was optimized using a Grid Search to find the best parameters. 
 
 ## Next Steps
 There a few additional steps I would take if I were to re-run this project or run a different segmentation in the future:
