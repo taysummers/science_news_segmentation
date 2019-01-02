@@ -50,11 +50,13 @@ def plot_scores_kmeans(X, k_vals):
     ax.plot(k_vals, wcss_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("within-cluster sum of squares")
+    ax.set_title('KMeans')
 
     fig, ax = plt.subplots()
     ax.plot(k_vals, sil_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("silhouette scores")
+    ax.set_title('KMeans')
     print(sil_scores)
 
     plt.show()
@@ -77,8 +79,7 @@ def plot_sil_scores_hclust(X, k_vals, affinity, linkage):
     ax.plot(k_vals, sil_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("silhouette scores")
-    ax.set_title('Silhoutte Score: affinity= {}, linkage = {}'.format(affinity,\
-                                                                    linkage))
+    ax.set_title('Hierarchical, {}, {}'.format(affinity, linkage))
     print(sil_scores)
 
     plt.show()
@@ -109,19 +110,19 @@ def plot_scores_gauss(X, k_vals, cov_type, max_iter = 100):
     ax.plot(k_vals, sil_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("silhouette scores")
-    ax.set_title('Silhoutte Score cov_type = {}'.format(cov_type))
+    ax.set_title('Gaussian, Sil Score, {}'.format(cov_type))
     print(sil_scores)
 
     fig, ax = plt.subplots()
     ax.plot(k_vals, aic_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("AIC scores")
-    ax.set_title('AIC Score cov_type = {}'.format(cov_type))
+    ax.set_title('Gaussian, AIC Score, {}'.format(cov_type))
 
     fig, ax = plt.subplots()
     ax.plot(k_vals, bic_scores, 'o-')
     ax.set_xlabel("number of clusters")
     ax.set_ylabel("BIC scores")
-    ax.set_title('BIC Score cov_type = {}'.format(cov_type))
+    ax.set_title('Gaussian, BIC Score, {}'.format(cov_type))
 
     plt.show()

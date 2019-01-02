@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from database_col_names import *
 
-def get_cluster_data(filepath):
+def get_cluster_data(filepath, segment_variables = ['ENJOY', 'KNOWLEDGE', 'SCIOFTEN', 'TOPICS1']):
     '''
     Pipeline for reading, cleaning, and breaking data
     into total data and segmentation datasets used for building the segmentation
@@ -131,8 +131,6 @@ def get_cluster_data(filepath):
     ## Drops null values in all data, the -1 means they
     ## Didn't respond or refused to respond to a question
     data = data.dropna()
-
-    segment_variables = ['ENJOY', 'KNOWLEDGE', 'SCIOFTEN', 'TOPICS1']
 
     ## Assigns segment data based on segment variables
     ## Segment varaibles were tested and scored in Jupyter Notebook
